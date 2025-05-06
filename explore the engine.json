@@ -15,7 +15,7 @@
     "packageName": "com.example.premiumCourse_layout",
     "pixelsRounding": false,
     "projectUuid": "7dbc0abb-8351-4507-9cbb-b4998d3c7d9b",
-    "scaleMode": "linear",
+    "scaleMode": "nearest",
     "sizeOnStartupMode": "",
     "templateSlug": "get-familiar-with-engine",
     "version": "1.0.0",
@@ -104,7 +104,7 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\Ghost_Idle_2.png",
-        "smoothed": true,
+        "smoothed": false,
         "userAdded": false
       },
       {
@@ -311,26 +311,31 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.49508400737489683,
+        "zoomFactor": 0.7370816317994149,
         "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
       "instances": [
         {
-          "angle": 47,
+          "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 180,
+          "height": 60.00000000000001,
           "keepRatio": true,
           "layer": "",
           "name": "Ghost",
           "persistentUuid": "58705f37-96ef-4681-8832-7f5113920b98",
-          "width": 264,
-          "x": 645,
-          "y": 198,
+          "width": 88,
+          "x": 640,
+          "y": 385,
           "zOrder": 1,
-          "numberProperties": [],
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -338,15 +343,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 720,
+          "height": 719,
           "keepRatio": true,
           "layer": "",
           "locked": true,
           "name": "Background",
           "persistentUuid": "310d190a-d137-4f28-9b5d-c477ec774138",
-          "sealed": true,
-          "width": 542,
-          "x": 369,
+          "width": 1280,
+          "x": 0,
           "y": 0,
           "zOrder": -100,
           "numberProperties": [],
@@ -616,7 +620,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Layer",
           "name": "ResourceBar",
           "persistentUuid": "f8419b6e-ee7a-4fa4-a1ff-8576f39ffb62",
           "width": 0,
@@ -2435,6 +2439,39 @@
             }
           ],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Layer",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
